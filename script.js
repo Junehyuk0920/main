@@ -20,11 +20,12 @@ $('#goContact').click(function()
 
 $(".project").on("click", function()
 {
-    var middle = $(this).find("h1").html();
-    middle = middle.toLowerCase();
-    middle = middle.replace(/\s/gi, "");
-    console.log(middle)
-    window.open(`http://${middle}.dothome.co.kr`);
+    var dir = $(this).find("h1").attr("id");
+    // middle = middle.toLowerCase();
+    // middle = middle.replace(/\s/gi, "");
+    // console.log(middle)
+    // window.open(`http://${middle}.dothome.co.kr`);
+    if(dir != undefined) window.open(`https://junehyuk0920.github.io/${dir}/`);
 })
 
 var languages = [ 85, 70, 70, 95, 35, 20, 5 ];
