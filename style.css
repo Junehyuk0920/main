@@ -101,7 +101,7 @@ header ul li a.selected
 
 .p:not(#projects)
 {
-    height: 100vh;
+    height: 100svh;
 }
 
 #main h1:first-child
@@ -295,7 +295,7 @@ hr
 
 #projects
 {
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 .cards
