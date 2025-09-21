@@ -215,5 +215,17 @@ let doAnimation = setInterval(() =>
 
 ///
 
-if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
-    $('body').css('zoom', '0.5');
+function scaleWrapper()
+{
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
+    {
+        var scale = $(window).width() / 1024;
+        $('#wrapper').css({
+            'transform': 'scale(' + scale + ')',
+            'transform-origin': 'top left'
+        });
+    }
+}
+
+scaleWrapper();
+$(window).on('resize', scaleWrapper);
