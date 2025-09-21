@@ -224,6 +224,7 @@ function scaleWrapper()
             'transform': 'scale(' + scale + ')',
             'transform-origin': 'top left'
         });
+        $(".circle").hide();
     }
 }
 
