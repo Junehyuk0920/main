@@ -99,10 +99,10 @@ header ul li a.selected
     padding: 30px 90px;
 }
 
-.p:not(#projects)
+/* .p:not(#projects)
 {
-    height: 100svh;
-}
+    height: 100vh;
+} */
 
 #main h1:first-child
 {
@@ -293,10 +293,10 @@ hr
     left: 60px;
 }
 
-#projects
+/* #projects
 {
-    min-height: 100svh;
-}
+    min-height: 100vh;
+} */
 
 .cards
 {

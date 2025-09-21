@@ -215,16 +215,11 @@ let doAnimation = setInterval(() =>
 
 ///
 
-function scaleWrapper()
+function setPageHeight()
 {
-    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
-    {
-        var scale = $(window).width() / 1024;
-        $('#wrapper').css('transform', 'scale(' + scale + ')');
-        $('#wrapper').css('width', 1024 / scale + 'px');
-        $(".circle").hide();
-    }
+    var h = window.innerHeight; // 실제 화면 높이 가져오기
+    $(".p").css("height", h + "px"); // 각 페이지에 적용
 }
 
-scaleWrapper();
-$(window).on('resize', scaleWrapper);
+setPageHeight(); // 최초 실행
+$(window).on("resize orientationchange", setPageHeight);
