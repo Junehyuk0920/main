@@ -212,6 +212,3 @@ let doAnimation = setInterval(() =>
 
     scaleUp = !scaleUp;
 }, 700);
-
-if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
-    $(".circle").hide();
