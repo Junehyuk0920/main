@@ -222,6 +222,7 @@ function scaleWrapper()
         var scale = $(window).width() / 1024;
         $('#wrapper').css('transform', 'scale(' + scale + ')');
         $('#wrapper').css('width', 1024 / scale + 'px');
+        $(".circle").hide();
     }
 }
 
