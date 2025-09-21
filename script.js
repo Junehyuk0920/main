@@ -218,8 +218,8 @@ let doAnimation = setInterval(() =>
 function setPageHeight()
 {
     var h = window.innerHeight; // 실제 화면 높이 가져오기
-    $(".p").css("height", h + "px"); // 각 페이지에 적용
+    $(".p").css("height", h + "px");
 }
 
-setPageHeight(); // 최초 실행
+setPageHeight();
 $(window).on("resize orientationchange", setPageHeight);
