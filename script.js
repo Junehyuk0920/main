@@ -220,11 +220,8 @@ function scaleWrapper()
     if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
     {
         var scale = $(window).width() / 1024;
-        $('#wrapper').css({
-            'transform': 'scale(' + scale + ')',
-            'transform-origin': 'top left'
-        });
-        $(".circle").hide();
+        $('#wrapper').css('transform', 'scale(' + scale + ')');
+        $('#wrapper').css('width', 1024 / scale + 'px');
     }
 }
 

@@ -51,6 +51,12 @@ body
     overflow-x: hidden;
 }
 
+#wrapper
+{
+    width: 1024px;
+    transform-origin: top left;
+}
+
 header
 {
     width: 100%;
