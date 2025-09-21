@@ -214,3 +214,6 @@ let doAnimation = setInterval(() =>
 }, 700);
 
 ///
+
+if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
+    $('body').css('zoom', '0.5');
