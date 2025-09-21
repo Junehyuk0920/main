@@ -215,11 +215,5 @@ let doAnimation = setInterval(() =>
 
 ///
 
-function setPageHeight()
-{
-    var h = window.innerHeight; // 실제 화면 높이 가져오기
-    $(".p").css("height", h + "px");
-}
-
-setPageHeight();
-$(window).on("resize orientationchange", setPageHeight);
+if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
+    $(".circle").hide();

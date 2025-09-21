@@ -54,7 +54,6 @@ body
 #wrapper
 {
     width: 1024px;
-    transform-origin: top left;
 }
 
 header
@@ -99,10 +98,10 @@ header ul li a.selected
     padding: 30px 90px;
 }
 
-/* .p:not(#projects)
+.p:not(#projects)
 {
     height: 100vh;
-} */
+}
 
 #main h1:first-child
 {
@@ -293,10 +292,10 @@ hr
     left: 60px;
 }
 
-/* #projects
+#projects
 {
     min-height: 100vh;
-} */
+}
 
 .cards
 {
