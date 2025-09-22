@@ -2,6 +2,8 @@ var vh_to_px;
 
 if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))
 {
+    $(".circle").hide();
+
     function setPageHeight()
     {
         var winWidth = window.innerWidth;
