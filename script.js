@@ -207,7 +207,7 @@ let scaleUp = true;
 
 let doAnimation = setInterval(() =>
 {
-    if(scaleUp) $(".card").eq(0).css("transform", "scale(1.02)");
+    if(scaleUp) $(".card").eq(0).css("transform", "scale(1.03)");
     else $(".card").eq(0).css("transform", "");
 
     scaleUp = !scaleUp;
