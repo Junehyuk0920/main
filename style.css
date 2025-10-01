@@ -48,7 +48,8 @@ small
 body
 {
     position: relative;
-    width: 100vw;
+    width: 1440px;
+    transform-origin: top center;
 }
 
 header
