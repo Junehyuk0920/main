@@ -5,8 +5,10 @@ function scaleBody()
 
     $("body").css({
         "transform": "scale(" + scale + ")",
-        "width": 1440 / scale + "px",
-        "margin": "0 auto"
+        "transform-origin": "top left",
+        "width": 1440 + "px",
+        "margin": 0,
+        "padding": 0
     });
 }
 
