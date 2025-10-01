@@ -48,11 +48,6 @@ small
 body
 {
     position: relative;
-    overflow-x: hidden;
-}
-
-#wrapper
-{
     width: 100vw;
 }
 
@@ -94,7 +89,9 @@ header ul li a.selected
 
 .p
 {
+    aspect-ratio: 1440 / 765;
     width: 100%;
+    height: auto;
     padding: 30px 90px;
 }
 
