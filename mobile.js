@@ -13,4 +13,18 @@ function scaleBody()
 }
 
 scaleBody();
-$(window).on("resize", scaleBody);
+
+let lastWidth = $(window).width();
+let lastHeight = $(window).height();
+
+$(window).on("resize", function()
+{
+    const newWidth = $(window).width();
+    const newHeight = $(window).height();
+
+    if (newWidth !== lastWidth || newHeight !== lastHeight) {
+        scaleBody();
+        lastWidth = newWidth;
+        lastHeight = newHeight;
+    }
+});
