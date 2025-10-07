@@ -1,7 +1,7 @@
 const languages = [
     ["HTML", 90],
     ["CSS", 85],
-    ["JS", 70],
+    ["JS", 50],
     ["PYTHON", 60],
     ["C", 90],
     ["C++", 87],
