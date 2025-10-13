@@ -297,7 +297,7 @@ hr
 .cards
 {
     display: grid;
-    height: 85%;
+    height: 70%;
     margin-top: 70px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -308,7 +308,8 @@ hr
     border-radius: 10px;
     border: 1px solid;
     padding: 30px;
-    height: 108px;
+    aspect-ratio: 7 / 1;
+    height: 88px;
     transition: all 500ms;
     cursor: pointer;
     display: flex;

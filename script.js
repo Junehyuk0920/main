@@ -107,7 +107,7 @@ function autoPlay(flag)
             nth++;
             if(nth == $(".skill").length) nth = 0;
 
-        }, 3000);
+        }, 2000);
     }
     else clearInterval(interval);
 }
@@ -207,7 +207,11 @@ let scaleUp = true;
 
 let doAnimation = setInterval(() =>
 {
-    if(scaleUp) $(".card").eq(0).css("transform", "scale(1.03)");
+    if(scaleUp)
+    {
+        if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) $(".card").eq(0).css("transform", "scale(1.05)");
+        else $(".card").eq(0).css("transform", "scale(1.03)");
+    }
     else $(".card").eq(0).css("transform", "");
 
     scaleUp = !scaleUp;
