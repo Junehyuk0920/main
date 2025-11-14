@@ -436,3 +436,36 @@ hr
     font-size: 1.875rem;
     z-index: 10;
 }
+
+@media (max-width: 600px)
+{
+    .p
+    {
+        padding: 1.5rem 1rem;
+    }
+
+    header
+    {
+        padding: 1rem 1.5rem;
+    }
+
+    .circle
+    {
+        width: 18rem;
+        height: 16rem;
+        right: 1rem;
+        top: 12rem;
+    }
+
+    .skills
+    {
+        height: 14rem;
+    }
+
+    .skill
+    {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+}
