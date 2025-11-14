@@ -11,6 +11,11 @@
     font-weight: 400;
 }
 
+body
+{
+    width: 100vw;
+}
+
 button
 {
     cursor: pointer;
