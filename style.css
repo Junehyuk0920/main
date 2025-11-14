@@ -45,12 +45,6 @@ small
     color: var(--key-color);
 }
 
-body
-{
-    width: 1440px;
-    transform-origin: top center;
-}
-
 header
 {
     width: 100%;
