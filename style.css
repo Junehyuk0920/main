@@ -436,22 +436,3 @@ hr
     font-size: 1.875rem;
     z-index: 10;
 }
-
-@media (max-width: 600px)
-{
-    .circle
-    {
-        width: 60vw;
-        height: 60vw;
-        right: 5vw;
-        top: 20vw;
-    }
-
-    .skills
-    {
-        width: 70vw;
-        height: 50vw;
-        right: 5vw;
-        top: 55vw;
-    }
-}
