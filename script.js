@@ -18,7 +18,8 @@ const projects = [
     ["Current Weather", true, "HTML / CSS / JS"],
     ["JH DOSIRAK", true, "HTML / CSS / JS"],
     ["WJH Dictionary", false, "HTML / CSS / JS"],
-    ["WJH Review", false, "HTML / CSS / JS"]
+    ["WJH Review", false, "HTML / CSS / JS"],
+    ["WJH OS", false, "HTML / CSS / JS"]
 ]
 
 $("li > a").on("click", function()
@@ -32,8 +33,15 @@ $(".topButton").on("click", function()
     $("html").animate({scrollTop: '0'}, 500);
 })
 
-const center = 564 / 2;
-const radius = 220;
+var center = $(".skills").outerWidth() / 2;
+var radius = center / 2 + 80;
+
+$(window).on("resize", function()
+{
+    center = $(".skills").outerWidth() / 2;
+    radius = center / 2 + 80;
+});
+
 var totalRotation = 0;
 var nth = 0;
 const skills = $(".skill");
