@@ -28,20 +28,20 @@ b
 
 big
 {
-    font-size: 5rem;
+    font-size: 80px;
 }
 
 small
 {
     color: #666;
-    margin-left: 0.625rem;
+    margin-left: 10px;
 }
 
 .title
 {
-    font-size: 3.75rem;
+    font-size: 60px;
     font-weight: 500;
-    margin-block: 2.1875rem;
+    margin-block: 35px;
     text-align: center;
 }
 
@@ -56,9 +56,9 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 5.625rem;
+    padding: 20px 90px;
     position: absolute;
-    border-bottom: 0.125rem solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
 }
 
 header ul
@@ -66,7 +66,7 @@ header ul
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 31.25rem;
+    width: 500px;
 }
 
 header ul li
@@ -82,15 +82,15 @@ header ul li a
 
 header ul li a.selected
 {
-    border-bottom: 0.125rem solid var(--key-color);
-    padding-bottom: 0.625rem;
+    border-bottom: 2px solid var(--key-color);
+    padding-bottom: 10px;
 }
 
 .p
 {
     width: 100%;
     height: auto;
-    padding: 1.875rem 5.625rem;
+    padding: 30px 90px;
 }
 
 .p:not(#projects)
@@ -98,22 +98,28 @@ header ul li a.selected
     height: 100vh;
 }
 
+#main
+{
+    display: flex;
+    justify-content: center;
+}
+
 #main h1:first-child
 {
-    margin-top: 8.75rem;
-    font-size: 3.125rem;
+    margin-top: 140px;
+    font-size: 4rem;
 }
 
 #main .bigBtn, #main a.bigBtn
 {
     background-color: var(--key-color);
-    width: 14.375rem;
-    height: 3.75rem;
+    width: 230px;
+    height: 60px;
     color: #fff;
-    border-radius: 0.625rem;
+    border-radius: 10px;
     border: none;
-    margin-top: 3.75rem;
-    font-size: 1.25rem;
+    margin-top: 60px;
+    font-size: 20px;
     transition: all 0.25s;
 }
 
@@ -121,7 +127,7 @@ header ul li a.selected
 {
     background-color: #fff !important;
     color: #000 !important;
-    margin-left: 0.625rem;
+    margin-left: 10px;
     border: 1px solid;
     display: inline-flex;
     vertical-align: top;
@@ -140,21 +146,21 @@ header ul li a.selected
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transform: translateY(7.75rem);
+    transform: translateY(124px);
 }
 
 #main button.contact
 {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.875rem;
+    font-size: 30px;
     color: #000;
     background-color: transparent;
     border: none;
-    margin-right: 0.625rem;
+    margin-right: 10px;
 }
 
 #main button.contact:hover
@@ -164,11 +170,11 @@ header ul li a.selected
 
 .circle
 {
-    width: 31.25rem;
-    height: 28.125rem;
+    width: 500px;
+    height: 450px;
     position: absolute;
-    top: 10.625rem;
-    right: 8.75rem;
+    top: 170px;
+    right: 140px;
     border-radius: 40% 3% 50% 50%;
     background-color: var(--key-color);
     display: flex;
@@ -198,7 +204,7 @@ hr
     justify-content: space-between;
     align-items: flex-start;
     height: 80%;
-    width: 29rem;
+    width: 464px;
 }
 
 #specs > div > div:not(.skill, .msg, .wheel)
@@ -208,8 +214,8 @@ hr
 
 #specs > div > div > h1
 {
-    font-size: 2.6875rem;
-    margin-bottom: 1.25rem;
+    font-size: 43px;
+    margin-bottom: 20px;
     color: var(--key-color);
     font-weight: 500;
 }
@@ -226,14 +232,14 @@ hr
 .skill
 {
     position: absolute;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.75rem;
+    font-size: 60px;
     color: #000000;
 }
 
@@ -250,15 +256,15 @@ hr
 
 .skill svg
 {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     fill: #000000;
 }
 
 .skill:nth-child(4) svg
 {
-    width: 2.625rem;
-    height: 2.625rem;
+    width: 42px;
+    height: 42px;
 }
 
 .msg
@@ -267,24 +273,24 @@ hr
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.625rem;
+    padding: 10px;
     background-color: var(--key-color);
     color: #fff;
-    width: 12.5rem;
-    transform: translate(25.3125rem);
+    width: 200px;
+    transform: translate(405px);
 }
 
 .msg::after
 {
     content: "";
     border-style: solid;
-    border-width: 0px 1.875rem 1.875rem 1.875rem;
+    border-width: 0px 30px 30px 30px;
     border-color: transparent transparent var(--key-color) transparent;
     width: 0;
     height: 0;
     position: absolute;
-    top: -1.25rem;
-    left: 3.75rem;
+    top: -20px;
+    left: 60px;
 }
 
 #projects
@@ -296,18 +302,18 @@ hr
 {
     display: grid;
     height: 70%;
-    margin-top: 4.375rem;
+    margin-top: 70px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+    gap: 20px;
 }
 
 .card
 {
-    border-radius: 0.625rem;
+    border-radius: 10px;
     border: 1px solid;
-    padding: 1.875rem;
+    padding: 30px;
     aspect-ratio: 7 / 1;
-    height: 5.5rem;
+    height: 88px;
     transition: all 500ms;
     cursor: pointer;
     display: flex;
@@ -346,21 +352,21 @@ hr
 
 .content div div i
 {
-    margin-right: 0.3125rem;
-    font-size: 1.25rem;
+    margin-right: 5px;
+    font-size: 20px;
 }
 
 .content h2
 {
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .flipped button
 {
     background-color: #fff;
     color: #000;
-    padding: 0.625rem;
-    border-radius: 0.3125rem;
+    padding: 10px;
+    border-radius: 5px;
     border: none;
     transition: all 0.25s;
 }
@@ -377,19 +383,19 @@ hr
 
 .card h1
 {
-    font-size: 1.5625rem;
+    font-size: 25px;
 }
 
 .card img
 {
     width: 100%;
     border: solid;
-    margin-top: 1.875rem;
+    margin-top: 30px;
 }
 
 #contact > div
 {
-    margin-top: 5rem;
+    margin-top: 80px;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -402,16 +408,16 @@ hr
     justify-content: space-between;
     align-items: center;
     border: solid var(--key-color);
-    padding: 1.875rem 2.5rem;
+    padding: 30px 40px;
     width: 62.5%;
     margin-left: 18.75%;
-    height: 5rem;
-    border-radius: 0.625rem;
+    height: 80px;
+    border-radius: 10px;
 }
 
 #contact div div *
 {
-    font-size: 1.5625rem;
+    font-size: 25px;
 }
 
 #contact div div:first-child
@@ -422,17 +428,17 @@ hr
 
 .topButton
 {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     border: solid var(--key-color);
     border-radius: 50%;
     position: fixed;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.875rem;
+    font-size: 30px;
     z-index: 10;
 }
