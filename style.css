@@ -451,21 +451,21 @@ hr
 
     .circle
     {
-        width: 18rem;
+        width: 16rem;
         height: 16rem;
         right: 1rem;
-        top: 12rem;
+        top: 9rem;
     }
 
     .skills
     {
-        height: 14rem;
+        height: 12rem;
     }
 
     .skill
     {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
     }
 }
