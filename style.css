@@ -439,33 +439,19 @@ hr
 
 @media (max-width: 600px)
 {
-    .p
-    {
-        padding: 1.5rem 1rem;
-    }
-
-    header
-    {
-        padding: 1rem 1.5rem;
-    }
-
     .circle
     {
-        width: 16rem;
-        height: 16rem;
-        right: 1rem;
-        top: 9rem;
+        width: 60vw;
+        height: 60vw;
+        right: 5vw;
+        top: 20vw;
     }
 
     .skills
     {
-        height: 12rem;
-    }
-
-    .skill
-    {
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.25rem;
+        width: 70vw;
+        height: 50vw;
+        right: 5vw;
+        top: 55vw;
     }
 }
