@@ -48,14 +48,12 @@ document.querySelectorAll("header ul li a").forEach((elem, idx) => {
 
 const data = [
     [
-        ["https://dummyimage.com/600x400/000/fff", "JH SNS (제작중)", "#DB #통신 #API"],
-        ["./images/face.png", "실시간 얼굴 인식기", "#딥러닝 #Flask"],
-        ["./images/chatbot.png", "JH 챗봇 (카카오톡 챗봇)", "#API #Flask"],
-        ["./images/invest.png", "JH Invest", "#반응형 #UIUX"],
-        ["https://dummyimage.com/600x400/000/fff", "Online Museum", "#Interaction #UIUX"],
-        ["https://dummyimage.com/600x400/000/fff", "Current Weather", "#API"],
-        
-
+        ["https://dummyimage.com/600x400/000/fff", "Web OS (개발 중)", "순수 HTML, CSS, JS만을 활용한 Windows 11 운영체제의 디자인과 응용 소프트웨어를 체험 할 수 있는 웹사이트"],
+        ["./images/face.png", "실시간 얼굴 인식기", "파이썬의 OpenCV, dlib, NumPy, Flask를 활용하여 웹캠 영상에서 실시간으로 얼굴을 탐지하는 실시간 얼굴 탐지 시스템"],
+        ["./images/chatbot.png", "JH 챗봇 (카카오톡 챗봇)", "MusicBrainz API를 활용해 가수의 노래 정보를 실시간으로 추출하고, 사용자 요청에 맞춰 노래를 제공하는 카카오톡 음악 검색 챗봇"],
+        ["./images/invest.png", "JH Invest", "가상의 프로그램 \"JH Invest\"를 소개하는 간단한 웹사이트"],
+        ["https://dummyimage.com/600x400/000/fff", "Online Museum", "대한민국의 유명 고대 유물들을 전시하는 압도감 있는 웹사이트, 유물의 상세한 설명과 검색 기능도 제공함"],
+        ["https://dummyimage.com/600x400/000/fff", "JH SNS (개발 중단)", "PHP와 MySQL를 활용한 SNS 웹사이트<br>(기능 : 계정 관리, 미디어 업로드, 개인 메시지 등)"],
     ],
     [
         ["./images/itq_hangeul.png", "ITQ 한글 A급", "2025.09.12"],
@@ -88,20 +86,20 @@ function appendCards(k)
         
         if(k == 0)
         {
-            let t = [];
-
-            elem[2].split(" ").forEach(item => {
-                t += `<h5>${item}</h5>`;
-            })
-
             card = `
-                <div class="card" style="grid-area: c${idx+1}">
+                <div class="card portfolio" style="grid-area: c${idx+1}">
                     <div class="image">
                         <img src="${elem[0]}" alt="">
                     </div>
                     <div>
-                        <h1 class="name">${elem[1]}</h1>
-                        <div class="tags">${t.toString()}</div>
+                        <div>
+                            <h1 class="name">${elem[1]}</h1>
+                            <p>${elem[2]}</p>
+                        </div>
+                        <div>
+                            <a href="#">Live Demo<i class="ph ph-arrow-square-out"></i></a>
+                            <button>Detail <i class="ph ph-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             `;
