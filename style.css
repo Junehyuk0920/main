@@ -3,8 +3,8 @@
     --black-color: hsl(168, 90%, 5%);
     --dark-color: hsl(168, 90%, 20%);
     --light-color: hsl(174, 48%, 92%);
-    /* --loading-page-time: 5.2s; */
-    --loading-page-time: 0s;
+    --loading-page-time: 5.2s;
+    /* --loading-page-time: 0s; */
     --screen-width: 1127px;
     --min-padding: 20px;
 }
@@ -151,26 +151,35 @@ header ul li a.selected
     margin-right: 0;
 }
 
-button.main
+div.main
 {
-    width: 230px;
-    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+div.main > button
+{
+    width: max(200px, 17vw);
+    aspect-ratio: 23 / 6;
     margin-right: 20px;
     border-radius: 10px;
     border: 2px solid var(--dark-color);
     font-size: 17px;
-    margin-top: 80px;
     background-color: #fff;
     color: var(--dark-color);
     transition: transform 0.5s;
+    margin-top: 10px;
 }
 
-button.main:hover
+div.main > button:hover
 {
     transform: scale(1.1);
 }
 
-button.main.emphasize
+div.main > button.emphasize
 {
     background-color: var(--dark-color);
     color: #fefefe;
