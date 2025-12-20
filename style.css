@@ -541,7 +541,7 @@ div.main > button.emphasize
 
 .contact > div:first-child > div:last-child
 {
-    min-height: 170px;
+    height: max(fit-content, 170px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -583,10 +583,11 @@ div.main > button.emphasize
     transform: scale(1.05);
 }
 
-.contact > div:first-child > div:last-child > ul:last-child
+.contact > div:first-child > div:last-child > ul
 {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .contact > div:first-child > div:last-child > ul > li
@@ -672,6 +673,7 @@ footer
     .contact > div:first-child
     {
         width: 100%;
+        margin-bottom: 50px;
     }
 
     .contact > div:last-child
@@ -689,13 +691,10 @@ footer
     {
         margin-bottom: 50px;
     }
-    .contact > div:first-child > div:last-child > ul:last-child
+
+    .contact > div:first-child > div:last-child > ul
     {
         margin-block: 30px;
-    }
-    .contact > div:first-child > div:last-child > ul:last-child > li
-    {
-        margin-bottom: 20px;
     }
 }
 
@@ -721,14 +720,14 @@ footer
 
 @media (max-width: 700px)
 {
+    header h1
+    {
+        display: none;
+    }
+    
     header > div
     {
-        flex-direction: column;
-    }
-
-    header ul
-    {
-        margin-top: 30px;
+        justify-content: center;
     }
 
     .buttons
