@@ -556,6 +556,7 @@ div.main > button.emphasize
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 5px;
 }
 
@@ -671,15 +672,21 @@ footer
     {
         width: 100%;
     }
+
     .contact > div:last-child
     {
         width: 100%;
         margin-top: 50px;
     }
+
+    .contact > div:last-child > div
+    {
+        margin-top: 30px;
+    }
+
     .contact > div:first-child > div:first-child
     {
         margin-bottom: 50px;
-        
     }
 }
 
