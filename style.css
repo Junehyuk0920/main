@@ -550,6 +550,7 @@ div.main > button.emphasize
 .contact > div:first-child > div:first-child > ul
 {
     margin-top: 20px;
+    width: 100%;
 }
 
 .contact > div:first-child ul li
