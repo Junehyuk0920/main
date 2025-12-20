@@ -44,7 +44,6 @@ main
     overflow-x: hidden;
     padding: 25px;
     padding-top: 190px;
-    padding-bottom: 200px;
     width: var(--screen-width);
 }
 
@@ -363,16 +362,6 @@ div.main > button.emphasize
 .cards
 {
     display: grid;
-    grid-template-areas:
-    "c1 c2 c3"
-    "c4 c5 c6"
-    "c7 c8 c9"
-    "c10 c11 c12"
-    "c13 c14 c15"
-    "c16 c17 c18"
-    "c19 c20 c21"
-    "c22 c23 c24"
-    ;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 50px;
@@ -380,12 +369,6 @@ div.main > button.emphasize
 
 .cards:has(.skill)
 {
-    grid-template-areas:
-    "c1 c2 c3 c4 c5 c6"
-    "c7 c8 c9 c10 c11 c12"
-    "c13 c14 c15 c16 c17 c18"
-    "c19 c20 c21 c22 c23 c24"
-    ;
     grid-template-columns: repeat(6, 1fr);
 }
 
@@ -523,19 +506,20 @@ div.main > button.emphasize
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 450px;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .contact > div
 {
-    width: 60%;
-    height: 100%;
+    height: 500px;
 }
 
 .contact > div:first-child
 {
-    width: 38%;
+    width: 420px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -544,7 +528,6 @@ div.main > button.emphasize
 .contact > div:first-child > div
 {
     border: solid;
-    height: 60%;
     padding: 30px;
     background-color: #f7f7f7;
     border-radius: 7px;
@@ -552,15 +535,16 @@ div.main > button.emphasize
 
 .contact > div:first-child > div:first-child
 {
+    height: 300px;
     position: relative;
 }
 
 .contact > div:first-child > div:last-child
 {
+    height: 170px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 35%;
 }
 
 .contact > div:first-child > div:first-child > ul
@@ -590,6 +574,12 @@ div.main > button.emphasize
     color: #fefefe;
     border: none;
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.contact > div:first-child button:hover
+{
+    transform: scale(1.05);
 }
 
 .contact > div:first-child > div:last-child > ul:last-child
@@ -615,6 +605,7 @@ div.main > button.emphasize
 
 .contact > div:last-child
 {
+    width: 630px;
     border: solid;
     border-radius: 7px;
     padding: 30px;
@@ -674,6 +665,24 @@ footer
     font-weight: 400;
 }
 
+@media (max-width: 1145px)
+{
+    .contact > div:first-child
+    {
+        width: 100%;
+    }
+    .contact > div:last-child
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contact > div:first-child > div:first-child
+    {
+        margin-bottom: 50px;
+        
+    }
+}
+
 @media (max-width: 1100px)
 {
     .something
@@ -687,33 +696,9 @@ footer
     .cards
     {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "c1 c2"
-        "c3 c4"
-        "c5 c6"
-        "c7 c8"
-        "c9 c10"
-        "c11 c12"
-        "c13 c14"
-        "c15 c16"
-        "c17 c18"
-        "c19 c20"
-        "c21 c22"
-        "c23 c24"
-        ;
     }
     .cards:has(.skill)
     {
-        grid-template-areas:
-        "c1 c2 c3"
-        "c4 c5 c6"
-        "c7 c8 c9"
-        "c10 c11 c12"
-        "c13 c14 c15"
-        "c16 c17 c18"
-        "c19 c20 c21"
-        "c22 c23 c24"
-        ;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -749,48 +734,9 @@ footer
     {
         gap: 50px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-        "c1"
-        "c2"
-        "c3"
-        "c4"
-        "c5"
-        "c6"
-        "c7"
-        "c8"
-        "c9"
-        "c10"
-        "c11"
-        "c12"
-        "c13"
-        "c14"
-        "c15"
-        "c16"
-        "c17"
-        "c18"
-        "c20"
-        "c21"
-        "c22"
-        "c23"
-        "c24"
-        ;
     }
     .cards:has(.skill)
     {
-        grid-template-areas:
-        "c1 c2"
-        "c3 c4"
-        "c5 c6"
-        "c7 c8"
-        "c9 c10"
-        "c11 c12"
-        "c13 c14"
-        "c15 c16"
-        "c17 c18"
-        "c19 c20"
-        "c21 c22"
-        "c23 c24"
-        ;
         grid-template-columns: repeat(2, 1fr);
     }
 }

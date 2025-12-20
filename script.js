@@ -87,7 +87,7 @@ function appendCards(k)
         if(k == 0)
         {
             card = `
-                <div class="card portfolio" style="grid-area: c${idx+1}">
+                <div class="card portfolio">
                     <div class="image">
                         <img src="${elem[0]}" alt="">
                     </div>
@@ -107,7 +107,7 @@ function appendCards(k)
         else if(k == 1)
         {
             card = `
-                <div class="card" style="grid-area: c${idx+1}">
+                <div class="card">
                     <div class="image">
                         <img src="${elem[0]}" alt="">
                     </div>
@@ -121,7 +121,7 @@ function appendCards(k)
         else
         {
             card = `
-                <div class="card skill" style="grid-area: c${idx+1}">
+                <div class="card skill">
                     <div class="image">
                         <img src="${elem[0]}" alt="">
                     </div>
