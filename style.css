@@ -3,8 +3,8 @@
     --black-color: hsl(168, 90%, 5%);
     --dark-color: hsl(168, 90%, 20%);
     --light-color: hsl(174, 48%, 92%);
-    --loading-page-time: 5.2s;
-    /* --loading-page-time: 0s; */
+    /* --loading-page-time: 5.2s; */
+    --loading-page-time: 0s;
     --screen-width: 1127px;
     --min-padding: 20px;
 }
@@ -23,13 +23,14 @@ button
 
 mark
 {
-    background-color: #fff;
+    background-color: transparent;
     color: var(--dark-color);
     font-size: max(60px, calc((110 / 1920) * 100vw));
 }
 
 body
 {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -43,7 +44,7 @@ main
     overflow-x: hidden;
     padding: 25px;
     padding-top: 190px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     width: var(--screen-width);
 }
 
@@ -168,7 +169,7 @@ div.main > button
     border-radius: 10px;
     border: 2px solid var(--dark-color);
     font-size: 17px;
-    background-color: #fff;
+    background-color: #fefefe;
     color: var(--dark-color);
     transition: transform 0.5s;
     margin-top: 10px;
@@ -515,6 +516,136 @@ div.main > button.emphasize
     text-align: center;
     top: calc((100% - 70px) / 2);
     left: calc((100% - 200px) / 2);
+}
+
+.contact
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+}
+
+.contact > div
+{
+    width: 60%;
+    height: 100%;
+}
+
+.contact > div:first-child
+{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact > div:first-child > div
+{
+    border: solid;
+    height: 60%;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 7px;
+}
+
+.contact > div:first-child > div:first-child
+{
+    position: relative;
+}
+
+.contact > div:first-child > div:last-child
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 35%;
+}
+
+.contact > div:first-child > div:first-child > ul
+{
+    margin-top: 20px;
+}
+
+.contact > div:first-child ul li
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.contact > div:first-child ul li h3
+{
+    font-weight: 500;
+}
+
+.contact > div:first-child button
+{
+    width: calc(100% - 60px);
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    background-color: var(--dark-color);
+    color: #fefefe;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact > div:first-child > div:last-child > ul:last-child
+{
+    display: flex;
+}
+
+.contact > div:first-child > div:last-child > ul > li
+{
+    margin-right: 30px;
+}
+
+.contact > div:first-child > div:last-child > ul li i
+{
+    font-size: 27px;
+    color: #53565a;
+}
+
+.contact > div:first-child > div:last-child > ul li i:hover
+{
+    color: #000;
+}
+
+.contact > div:last-child
+{
+    border: solid;
+    border-radius: 7px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+.contact > div:last-child textarea
+{
+    width: 100%;
+    height: 80%;
+    resize: none;
+}
+
+footer
+{
+    background-color: #f7f7f7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright
+{
+    font-size: 15px;
+    font-weight: 400;
 }
 
 @media (max-width: 1100px)
