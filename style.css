@@ -376,10 +376,13 @@ div.main > button.emphasize
 {
     background-color: #fefefe;
     border: 1px solid;
+    border-radius: 5px;
 }
 
 .card .image
 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 100%;
     height: 280px;
     border-bottom: 1px solid;
@@ -557,7 +560,7 @@ div.main > button.emphasize
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .contact > div:first-child ul li h3
@@ -695,6 +698,11 @@ footer
     .contact > div:first-child > div:last-child > ul
     {
         margin-block: 30px;
+    }
+
+    .contact > div:first-child > div:last-child > ul > li
+    {
+        margin-bottom: 30px;
     }
 }
 
