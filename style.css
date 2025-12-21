@@ -363,7 +363,7 @@ div.main > button.emphasize
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
     margin-top: 50px;
 }
 
@@ -452,7 +452,7 @@ div.main > button.emphasize
     transition: all 0.5s;
 }
 
-.card.portfolio > div > div:nth-child(2) > button:hover
+.card.portfolio:not(:last-child) > div > div:nth-child(2) > button:hover
 {
     background-color: #fefefe;
     border: 2px solid var(--dark-color);
@@ -487,7 +487,7 @@ div.main > button.emphasize
 .card.portfolio:last-child
 {
     position: relative;
-    filter: brightness(60%);
+    filter: brightness(50%);
 }
 
 .card.portfolio:last-child::after
@@ -514,21 +514,14 @@ div.main > button.emphasize
     margin-bottom: 150px;
 }
 
-.contact > div
-{
-    height: 500px;
-}
-
 .contact > div:first-child
 {
-    width: 420px;
-    height: 500px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.contact > div:first-child > div
+.basic, .platform
 {
     border: solid;
     padding: 30px;
@@ -536,44 +529,43 @@ div.main > button.emphasize
     border-radius: 7px;
 }
 
-.contact > div:first-child > div:first-child
+.basic
 {
-    min-height: 300px;
     position: relative;
+    margin-bottom: 50px;
 }
 
-.contact > div:first-child > div:last-child
+.platform
 {
-    height: max(fit-content, 170px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.contact > div:first-child > div:first-child > ul
+.basic ul
 {
     margin-top: 20px;
     width: 100%;
 }
 
-.contact > div:first-child ul li
+.basic ul li
 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    word-break: break-all;
 }
 
-.contact > div:first-child ul li h3
+.basic ul li h3, .platform ul li h3
 {
     font-weight: 500;
 }
 
-.contact > div:first-child button
+.basic button
 {
-    width: calc(100% - 60px);
+    width: 100%;
     height: 50px;
-    position: absolute;
-    bottom: 30px;
+    margin-top: 30px;
     background-color: var(--dark-color);
     color: #fefefe;
     border: none;
@@ -581,50 +573,58 @@ div.main > button.emphasize
     transition: all 0.5s;
 }
 
-.contact > div:first-child button:hover
+.basic button:hover
 {
     transform: scale(1.05);
 }
 
-.contact > div:first-child > div:last-child > ul
+.platform ul
 {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
-.contact > div:first-child > div:last-child > ul > li
+.platform ul li
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 30px;
+    margin-bottom: 20px;
 }
 
-.contact > div:first-child > div:last-child > ul li i
+.platform ul li i
 {
     font-size: 27px;
     color: #53565a;
 }
 
-.contact > div:first-child > div:last-child > ul li i:hover
+.platform > ul li i:hover
 {
     color: #000;
 }
 
-.contact > div:last-child
+.studying
 {
     width: 630px;
+    height: 557px;
     border: solid;
     border-radius: 7px;
     padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     background-color: #f7f7f7;
 }
 
-.contact > div:last-child div
+.studying h3
 {
+    margin-top: 20px;
+}
+
+.studying div
+{
+    margin-top: 30px;
     width: 100%;
-    height: 80%;
+    height: 380px;
     border: solid;
     padding: 50px;
     border-radius: 7px;
@@ -634,7 +634,7 @@ div.main > button.emphasize
     position: relative;
 }
 
-.contact > div:last-child div::after
+.studying div::after
 {
     content: "React";
     background-color: #62dbfb;
@@ -647,8 +647,9 @@ div.main > button.emphasize
     border-bottom: solid;
 }
 
-.contact > div:last-child div img
+.studying div img
 {
+    min-width: 130px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -679,30 +680,14 @@ footer
         margin-bottom: 50px;
     }
 
-    .contact > div:last-child
+    .studying
     {
         width: 100%;
-        margin-top: 50px;
     }
 
-    .contact > div:last-child > div
-    {
-        margin-top: 30px;
-    }
-
-    .contact > div:first-child > div:first-child
+    .basic
     {
         margin-bottom: 50px;
-    }
-
-    .contact > div:first-child > div:last-child > ul
-    {
-        margin-block: 30px;
-    }
-
-    .contact > div:first-child > div:last-child > ul > li
-    {
-        margin-bottom: 30px;
     }
 }
 
@@ -720,6 +705,7 @@ footer
     {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .cards:has(.skill)
     {
         grid-template-columns: repeat(3, 1fr);
@@ -728,6 +714,17 @@ footer
 
 @media (max-width: 700px)
 {
+    .basic li
+    {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .basic li h3
+    {
+        margin-top: 5px;
+    }
+
     header h1
     {
         display: none;
@@ -746,6 +743,7 @@ footer
     .buttons button
     {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .boxes
