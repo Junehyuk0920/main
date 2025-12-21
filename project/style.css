@@ -1,0 +1,80 @@
+.info
+{
+    width: 80%;
+    height: 700px;
+    position: absolute;
+    top: calc((100% - 700px) / 2);
+    left: 10%;
+    padding: 50px;
+    border: solid;
+}
+
+.info .img
+{
+    width: 500px;
+    height: 330px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .img img
+{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.info h1
+{
+    font-size: 50px;
+}
+
+.info p
+{
+    width: 500px;
+    height: 208px;
+    margin-top: 50px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.info .skills
+{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+}
+
+.info .skills::before
+{
+    content: "주요 기술";
+    position: absolute;
+    top: -50px;
+    font-size: 25px;
+}
+
+.info .skills li
+{
+    font-size: 20px;
+    list-style: none;
+    margin-right: 10px;
+    background-color: var(--light-color);
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.info > div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info > div > div
+{
+    display: flex;
+    flex-direction: column;
+}

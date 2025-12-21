@@ -1,0 +1,31 @@
+[
+    [
+        ["https://dummyimage.com/600x400/000/fff", "Web OS (개발 중)", "순수 HTML, CSS, JS만을 활용한 Windows 11 운영체제의 디자인과 응용 소프트웨어를 체험 할 수 있는 웹사이트", ["HTML", "CSS", "JavaScript"]],
+        ["../images/face.png", "실시간 얼굴 인식기", "파이썬의 OpenCV, Flask 등을 활용하여 웹캠 영상에서 실시간으로 얼굴을 탐지하는 실시간 얼굴 탐지 시스템", ["HTML", "CSS", "PYTHON", "Flask", "dlib", "OpenCV", "NumPy"]],
+        ["../images/chatbot.png", "JH 챗봇 (카카오톡 챗봇)", "MusicBrainz API를 활용해 가수의 노래 정보를 실시간으로 추출하고, 사용자 요청에 맞춰 노래를 제공하는 카카오톡 음악 검색 챗봇", "Flask", "API"],
+        ["../images/invest.png", "JH Invest", "가상의 프로그램 \"JH Invest\"를 소개하는 간단한 웹사이트", ["HTML", "CSS", "JavaScript"]],
+        ["https://dummyimage.com/600x400/000/fff", "Online Museum", "대한민국의 유명 고대 유물들을 전시하는 압도감 있는 웹사이트, 유물의 상세한 설명과 검색 기능도 제공함", ["HTML", "CSS", "JavaScript"]],
+        ["https://dummyimage.com/600x400/000/fff", "JH SNS (개발 중단)", "PHP와 MySQL를 활용한 SNS 웹사이트", ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "DataBase"]]
+    ],
+    [
+        ["../images/itq_hangeul.png", "ITQ 한글 A급", "2025.09.12"],
+        ["../images/nypc.png", "NYPC 2라운드 진출", "2025.08.17"],
+        ["../images/itq_hangeul.png", "ITQ 파워포인트 A급", "2025.03.14"],
+        ["../images/gifted.png", "충청남도천안교육지원청 AI/SW 영재교육원 수료", "2024.11.16"],
+        ["../images/diat.png", "DIAT 파워포인트 중급", "2023.02.17"]
+    ],
+    [
+        ["../images/html.png", "HTML", "90%"],
+        ["../images/css.png", "CSS", "85%"],
+        ["../images/js.png", "Javascript", "80%"],
+        ["../images/c.svg", "C언어", "90%"],
+        ["../images/c++.png", "C++", "85%"],
+        ["../images/python.jpeg", "Python", "70%"],
+        ["../images/php.png", "php", "60%"],
+        ["../images/sql.png", "MySQL", "50%"],
+        ["../images/react.png", "React", "30%"],
+        ["../images/vue.png", "Vue.js", "60%"],
+        ["../images/arduino.png", "Arduino", "40%"],
+        ["../images/legoSpike.png", "Lego Spike", "90%"]
+    ]
+]

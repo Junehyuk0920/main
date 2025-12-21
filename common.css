@@ -1,0 +1,13 @@
+:root
+{
+    --black-color: hsl(168, 90%, 5%);
+    --dark-color: hsl(168, 90%, 20%);
+    --light-color: hsl(174, 48%, 92%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
