@@ -20,7 +20,6 @@ async function getData()
 var projectName = document.querySelector("h1");
 var projectDesc = document.querySelector("p");
 var projectImg = document.querySelector("img");
-var projectFeat = document.querySelector(".features");
 var projectSkill = document.querySelector(".skills");
 
 function updateData()
@@ -32,9 +31,9 @@ function updateData()
     }
     projectImg.src = data[0];
     projectName.textContent = data[1];
-    projectDesc.textContent = data[2];
+    projectDesc.innerHTML = (data[3] != "") ? data[3] : "<small>Instead of a long description, a short summary is provided below.</small><br><br>" + data[2];
 
-    data[3].forEach(skill => {
+    data[4].forEach(skill => {
         projectSkill.insertAdjacentHTML("beforeend", `<li>${skill}</li>`);
     })
 }

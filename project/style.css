@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f7f7f7;
 }
 
 .info .img img
@@ -27,25 +28,26 @@
 
 .info h1
 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .info p
 {
     width: 500px;
-    height: 208px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 20px;
     display: inline-block;
 }
 
 .info .skills
 {
-    background-color: red;
-    width: 100%;
+    width: fit-content;
     display: flex;
-    margin-top: 100px;
-    position: relative;
+    width: calc(100% - 100px);
+    bottom: 30px;
+    position: absolute;
+    border-top: solid;
+    padding-top: 10px;
 }
 
 .info .skills::before
@@ -61,10 +63,15 @@
     font-size: 20px;
     list-style: none;
     margin-right: 10px;
-    background-color: var(--light-color);
     height: fit-content;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.info .skills li::before
+{
+    content: "#";
+    margin-right: 5px;
 }
 
 .info > div
