@@ -1,18 +1,20 @@
 .info
 {
     width: 80%;
-    height: 700px;
+    height: 650px;
     position: absolute;
-    top: calc((100% - 700px) / 2);
+    top: calc((100% - 650px) / 2);
     left: 10%;
-    padding: 50px;
     border: solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .info .img
 {
-    width: 500px;
-    height: 330px;
+    width: 400px;
+    height: 100%;
     border: solid;
     display: flex;
     justify-content: center;
@@ -41,24 +43,32 @@
 
 .info .skills
 {
-    width: fit-content;
+    background-color: var(--dark-color);
+    height: 160px;
+    padding: 35px;
+}
+
+.info .skills *
+{
+    color: #fefefe;
+}
+
+.info .skills ul
+{
     display: flex;
     width: calc(100% - 100px);
-    bottom: 30px;
-    position: absolute;
-    border-top: solid;
+    border-top: solid #f7f7f7;
     padding-top: 10px;
 }
 
-.info .skills::before
+.info .skills h1
 {
-    content: "주요 기술";
-    position: absolute;
-    top: -50px;
     font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
-.info .skills li
+.info .skills ul li
 {
     font-size: 20px;
     list-style: none;
@@ -66,22 +76,87 @@
     height: fit-content;
     padding: 5px 10px;
     border-radius: 5px;
+    font-weight: 500;
 }
 
-.info .skills li::before
+.info .skills ul li::before
 {
     content: "#";
     margin-right: 5px;
 }
 
-.info > div
+.info > div:not(.skills)
 {
     display: flex;
     justify-content: space-between;
+    margin: 50px;
+    height: 100%;
 }
 
 .info > div > div
 {
     display: flex;
     flex-direction: column;
+}
+
+small
+{
+    color: #444;
+}
+
+small::before
+{
+    color: red;
+    content: "( ! )";
+    margin-inline: 5px;
+    font-size: 20px;
+}
+
+button
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home
+{
+    background-color: transparent;
+    top: 15px;
+    left: 15px;
+    font-size: 25px;
+    border: none;
+    transition: all 0.7s;
+}
+
+.home i
+{
+    font-weight: 600;
+}
+
+.home:hover
+{
+    transform: rotate(-360deg);
+}
+
+.prev, .next
+{
+    background-color: var(--dark-color);
+    color: #fefefe;
+    top: calc((100vh - 50px) / 2);
+}
+
+.prev
+{
+    left: 55px;
+}
+
+.next
+{
+    right: 55px;
 }
