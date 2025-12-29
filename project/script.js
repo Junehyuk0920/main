@@ -22,6 +22,8 @@ var projectDesc = document.querySelector("p");
 var projectImg = document.querySelector("img");
 var projectSkill = document.querySelector(".skills ul");
 
+var screenW;
+
 function updateData()
 {
     let dt = data[idx];
@@ -32,7 +34,9 @@ function updateData()
     }
     projectImg.src = dt[0];
     projectName.textContent = dt[1];
-    projectDesc.innerHTML = (dt[3] != "") ? dt[3] : dt[2] + "<br><br><small>Only Short Description</small>";
+    projectDesc.innerHTML = (dt[3] != "") ? (dt[3] == dt[3].substr(0, screenW ?? 500)) ? dt[3] : dt[3].substr(0, screenW ?? 500) + "..." : dt[2] + "<br><br><small>Only Short Description</small>";
+
+    console.log(screenW);
 
     dt[4].forEach(skill => {
         projectSkill.insertAdjacentHTML("beforeend", `<li>${skill}</li>`);
@@ -60,3 +64,8 @@ document.querySelector(".next").addEventListener("click", () => {
     if (idx < data.length-1) location.href = `./index.html?project=${idx+1}`;
     else alert("가장 마지막 프로젝트입니다!");
 })
+
+window.addEventListener("resize", () => {
+    screenW = Math.max(parseInt(window.innerWidth / 5), 200);
+    updateData();
+});

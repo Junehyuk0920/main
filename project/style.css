@@ -13,8 +13,8 @@
 
 .info .img
 {
-    width: 400px;
-    height: 100%;
+    min-width: 200px;
+    height: 200px;
     border: solid;
     display: flex;
     justify-content: center;
@@ -26,6 +26,7 @@
 {
     max-width: 90%;
     max-height: 90%;
+    border: 1px solid;
 }
 
 .info h1
@@ -35,7 +36,7 @@
 
 .info p
 {
-    width: 500px;
+    width: 100%;
     margin-top: 30px;
     font-size: 20px;
     display: inline-block;
@@ -93,10 +94,11 @@
     height: 100%;
 }
 
-.info > div > div
+.info > div > div:not(.img)
 {
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 small
