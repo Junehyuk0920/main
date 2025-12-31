@@ -34,10 +34,11 @@ function updateData()
     }
     projectImg.src = dt[0];
     projectName.textContent = dt[1];
-    projectDesc.innerHTML = (dt[3] != "") ? (dt[3] == dt[3].substr(0, screenW ?? 500)) ? dt[3] : dt[3].substr(0, screenW ?? 500) + "..." : dt[2] + "<br><br><small>Only Short Description</small>";
+    projectDesc.innerHTML = (dt[3] != "") ? dt[3] : dt[2] + "<br><br><small>Only Short Description</small>";
 
-    console.log(screenW);
+    // console.log(screenW);
 
+    projectSkill.innerHTML = "";
     dt[4].forEach(skill => {
         projectSkill.insertAdjacentHTML("beforeend", `<li>${skill}</li>`);
     })
