@@ -46,7 +46,7 @@ header
     top: 0;
     left: 0;
     z-index: 5;
-    box-shadow: 0px 2px 5px 1px #454545;
+    box-shadow: 0px 2px 5px 1px #505050;
     display: flex;
     justify-content: center;
     padding-inline: var(--min-padding);
@@ -66,7 +66,7 @@ header h1
 {
     font-size: 30px;
     font-weight: 600;
-    color: #fefefe;
+    color: #fff;
 }
 
 header ul
@@ -89,7 +89,7 @@ header ul li:last-child
 
 header ul li a
 {
-    color: #fefefe;
+    color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -154,7 +154,7 @@ div.main > a
     border-radius: 10px;
     border: 2px solid var(--dark-color);
     font-size: 17px;
-    background-color: #fefefe;
+    background-color: #fff;
     color: var(--dark-color);
     transition: transform 0.5s;
     margin-top: 10px;
@@ -172,7 +172,7 @@ div.main > a:hover
 div.main > a.emphasize
 {
     background-color: var(--dark-color);
-    color: #fefefe;
+    color: #fff;
 }
 
 .something
@@ -274,7 +274,7 @@ div.main > a.emphasize
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: #fefefe;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -290,7 +290,7 @@ div.main > a.emphasize
     font-size: 20px;
     font-weight: 500;
     margin-top: -10px;
-    color: #454545;
+    color: #505050;
 }
 
 .box.selected
@@ -300,7 +300,7 @@ div.main > a.emphasize
 
 .box.selected h1
 {
-    color: #fefefe;
+    color: #fff;
 }
 
 .box.selected h2
@@ -310,8 +310,8 @@ div.main > a.emphasize
 
 .box.selected i
 {
-    background-color: #fefefe;
-    color: var(--black-color);
+    background-color: #fff;
+    color: #111;
 }
 
 /* */
@@ -331,7 +331,7 @@ div.main > a.emphasize
     width: calc((100% - 30px) / 3);
     height: 70px;
     background-color: var(--light-color);
-    color: #000;
+    color: #111;
     border: 1px solid;
     border-radius: 7px;
     transition: all 0.5s;
@@ -346,7 +346,7 @@ div.main > a.emphasize
 .buttons button.selected
 {
     background-color: var(--dark-color);
-    color: #fefefe;
+    color: #fff;
 }
 
 .cards
@@ -364,7 +364,7 @@ div.main > a.emphasize
 
 .card
 {
-    background-color: #fefefe;
+    background-color: #fff;
     border: 1px solid;
     border-radius: 5px;
 }
@@ -436,15 +436,15 @@ div.main > a.emphasize
 {
     padding: 5px 10px;
     background-color: var(--dark-color);
-    color: #fefefe;
-    border: 2px solid #fefefe;
+    color: #fff;
+    border: 2px solid #fff;
     border-radius: 2px;
     transition: all 0.5s;
 }
 
 .card.portfolio > div > div:nth-child(2) > button:hover
 {
-    background-color: #fefefe;
+    background-color: #fff;
     border: 2px solid var(--dark-color);
     color: var(--dark-color);
 }
@@ -471,7 +471,7 @@ div.main > a.emphasize
 {
     font-size: 18px;
     font-weight: 400;
-    color: #454545;
+    color: #505050;
 }
 
 .card.portfolio:last-child
@@ -557,7 +557,7 @@ div.main > a.emphasize
     height: 50px;
     margin-top: 30px;
     background-color: var(--dark-color);
-    color: #fefefe;
+    color: #fff;
     border: none;
     border-radius: 5px;
     transition: all 0.5s;
@@ -587,12 +587,12 @@ div.main > a.emphasize
 .platform ul li i
 {
     font-size: 27px;
-    color: #53565a;
+    color: #767676;
 }
 
 .platform > ul li i:hover
 {
-    color: #000;
+    color: #111;
 }
 
 .studying

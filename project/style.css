@@ -44,7 +44,7 @@
 
 .info .skills *
 {
-    color: #fefefe;
+    color: #fff;
 }
 
 .info .skills h1
@@ -131,7 +131,7 @@ button
     font-size: 25px;
     border: 2px solid;
     transition: all 0.7s;
-    background-color: #fefefe;
+    background-color: #fff;
 }
 
 .home i
@@ -147,7 +147,7 @@ button
 .prev, .next
 {
     background-color: var(--dark-color);
-    color: #fefefe;
+    color: #fff;
     top: calc((100vh - 50px) / 2);
 }
 

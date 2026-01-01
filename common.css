@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+*:not(i)
+{
+    color: #111;
+}
+
 button
 {
     cursor: pointer;

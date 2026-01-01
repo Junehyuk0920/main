@@ -34,7 +34,7 @@ b
 {
     text-align: center;
     font-size: clamp(30px, 4vw, 12rem);
-    color: #fefefe;
+    color: #fff;
     animation: appearY 1s ease;
 }
 
@@ -50,7 +50,7 @@ b
 .loadingPage .icons .icon
 {
     background-color: red;
-    color: #fefefe;
+    color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -75,7 +75,7 @@ b
     align-items: center;
     margin-top: 70px;
     font-size: clamp(10px, 2vw, 20px);
-    color: #fefefe;
+    color: #fff;
     font-weight: 400;
     font-style: italic;
     text-align: center;
