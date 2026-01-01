@@ -15,6 +15,7 @@ mark
 
 body
 {
+    scroll-behavior: smooth;
     position: relative;
     width: 100%;
     display: flex;
@@ -145,7 +146,7 @@ div.main
     flex-wrap: wrap;
 }
 
-div.main > button
+div.main > a
 {
     width: max(200px, 17vw);
     aspect-ratio: 23 / 6;
@@ -157,14 +158,18 @@ div.main > button
     color: var(--dark-color);
     transition: transform 0.5s;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-div.main > button:hover
+div.main > a:hover
 {
     transform: scale(1.1);
 }
 
-div.main > button.emphasize
+div.main > a.emphasize
 {
     background-color: var(--dark-color);
     color: #fefefe;

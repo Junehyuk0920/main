@@ -1,7 +1,7 @@
 let urlDOM = document.querySelector(".loadingPage h2");
 const msg = "Web Developer!";
 
-urlDOM.innerHTML = '';
+urlDOM.innerHTML = "";
 
 function delay(ms)
 {
@@ -41,6 +41,78 @@ async function getData()
     }
 }
 
+async function appendCards(k)
+{
+    document.querySelector(".cards").innerHTML = " ";
+    data[k].forEach((elem, idx) => {
+        var card;
+        
+        if(k == 0)
+        {
+            card = `
+                <div class="card portfolio">
+                    <div class="image">
+                        <img src="${elem[0]}" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="name">${elem[1]}</h1>
+                            <p>${elem[2]}</p>
+                        </div>
+                        <div>
+                            <a href="${elem[5] ?? "#"}">Live Demo<i class="ph ph-arrow-square-out"></i></a>
+                            <button class="detail">Detail <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        else if(k == 1)
+        {
+            card = `
+                <div class="card">
+                    <div class="image">
+                        <img src="${elem[0]}" alt="">
+                    </div>
+                    <div>
+                        <h1 class="name">${elem[1]}</h1>
+                        <div class="date">${elem[2]}</div>
+                    </div>
+                </div>
+            `;
+        }
+        else
+        {
+            card = `
+                <div class="card skill">
+                    <div class="image">
+                        <img src="${elem[0]}" alt="">
+                    </div>
+                    <div>
+                        <h1 class="name">${elem[1]}</h1>
+                        <div class="date">${elem[2]}</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        document.querySelector(".cards").insertAdjacentHTML("beforeend", card);
+
+        if(k == 2)
+        {
+            document.querySelectorAll(".card").forEach(dom => {
+                dom.querySelector(".image").style.height = "150px";
+            })
+        }
+        else
+        {
+            document.querySelectorAll(".card").forEach(dom => {
+                dom.querySelector(".image").style.height = "250px";
+            })
+        }
+    });
+};
+
 async function init()
 {   
     typing();
@@ -58,85 +130,12 @@ async function init()
 
     document.querySelectorAll("header ul li a").forEach((elem, idx) => {
         elem.addEventListener("click", () => {
-            appendCards(idx);
             document.querySelectorAll("header ul li a").forEach(elem => {
                 elem.classList.remove("selected");
             })
             elem.classList.add("selected");
         })
     })
-
-    async function appendCards(k)
-    {
-        document.querySelector(".cards").innerHTML = ' ';
-        data[k].forEach((elem, idx) => {
-            var card;
-            
-            if(k == 0)
-            {
-                card = `
-                    <div class="card portfolio">
-                        <div class="image">
-                            <img src="${elem[0]}" alt="">
-                        </div>
-                        <div>
-                            <div>
-                                <h1 class="name">${elem[1]}</h1>
-                                <p>${elem[2]}</p>
-                            </div>
-                            <div>
-                                <a href="#">Live Demo<i class="ph ph-arrow-square-out"></i></a>
-                                <button class="detail">Detail <i class="ph ph-arrow-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            else if(k == 1)
-            {
-                card = `
-                    <div class="card">
-                        <div class="image">
-                            <img src="${elem[0]}" alt="">
-                        </div>
-                        <div>
-                            <h1 class="name">${elem[1]}</h1>
-                            <div class="date">${elem[2]}</div>
-                        </div>
-                    </div>
-                `;
-            }
-            else
-            {
-                card = `
-                    <div class="card skill">
-                        <div class="image">
-                            <img src="${elem[0]}" alt="">
-                        </div>
-                        <div>
-                            <h1 class="name">${elem[1]}</h1>
-                            <div class="date">${elem[2]}</div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            document.querySelector(".cards").insertAdjacentHTML("beforeend", card);
-
-            if(k == 2)
-            {
-                document.querySelectorAll(".card").forEach(dom => {
-                    dom.querySelector(".image").style.height = "150px";
-                })
-            }
-            else
-            {
-                document.querySelectorAll(".card").forEach(dom => {
-                    dom.querySelector(".image").style.height = "250px";
-                })
-            }
-        });
-    };
 
     await appendCards(0);
 
