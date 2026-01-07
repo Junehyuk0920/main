@@ -54,24 +54,24 @@
         ]
     ],
     [
-        ["../images/itq_hangeul.png", "ITQ 한글 A급", "2025.09.12"],
-        ["../images/nypc.png", "NYPC 2라운드 진출", "2025.08.17"],
-        ["../images/itq_hangeul.png", "ITQ 파워포인트 A급", "2025.03.14"],
-        ["../images/gifted.png", "충청남도천안교육지원청 AI/SW 영재교육원 수료", "2024.11.16"],
-        ["../images/diat.png", "DIAT 파워포인트 중급", "2023.02.17"]
+        ["./images/itq_hangeul.png", "ITQ 한글 A급", "2025.09.12"],
+        ["./images/nypc.png", "NYPC 2라운드 진출", "2025.08.17"],
+        ["./images/itq_hangeul.png", "ITQ 파워포인트 A급", "2025.03.14"],
+        ["./images/gifted.png", "충청남도천안교육지원청 AI/SW 영재교육원 수료", "2024.11.16"],
+        ["./images/diat.png", "DIAT 파워포인트 중급", "2023.02.17"]
     ],
     [
-        ["../images/html.png", "HTML", "90%"],
-        ["../images/css.png", "CSS", "85%"],
-        ["../images/js.png", "Javascript", "80%"],
-        ["../images/c.svg", "C언어", "90%"],
-        ["../images/c++.png", "C++", "85%"],
-        ["../images/python.jpeg", "Python", "70%"],
-        ["../images/php.png", "php", "60%"],
-        ["../images/sql.png", "MySQL", "50%"],
-        ["../images/react.png", "React", "30%"],
-        ["../images/vue.png", "Vue.js", "60%"],
-        ["../images/arduino.png", "Arduino", "40%"],
-        ["../images/legoSpike.png", "Lego Spike", "90%"]
+        ["./images/html.png", "HTML", "90%"],
+        ["./images/css.png", "CSS", "85%"],
+        ["./images/js.png", "Javascript", "80%"],
+        ["./images/c.svg", "C언어", "90%"],
+        ["./images/c++.png", "C++", "85%"],
+        ["./images/python.jpeg", "Python", "70%"],
+        ["./images/php.png", "php", "60%"],
+        ["./images/sql.png", "MySQL", "50%"],
+        ["./images/react.png", "React", "30%"],
+        ["./images/vue.png", "Vue.js", "60%"],
+        ["./images/arduino.png", "Arduino", "40%"],
+        ["./images/legoSpike.png", "Lego Spike", "90%"]
     ]
 ]
