@@ -8,14 +8,22 @@
             ["HTML", "CSS", "JavaScript"]
         ],
         [
-            "../images/face.png",
+            "./images/blog.png",
+            "JH의 개발일지",
+            "순수 HTML, CSS, JS, Firebase만을 활용한 velog, tistory 느낌의 개인 블로그",
+            "",
+            ["HTML", "CSS", "Javascript", "Firebase"]
+
+        ],
+        [
+            "./images/face.png",
             "실시간 얼굴 인식기",
             "파이썬의 OpenCV, Flask 등을 활용하여 웹캠 영상에서 실시간으로 얼굴을 탐지하는 실시간 얼굴 탐지 시스템",
             "Python의 OpenCV와 Flask를 활용하여 웹캠 영상 속의 얼굴을 실시간으로 식별하고 추적하는 시스템. Haar Cascade 알고리즘을 통해 복잡한 배경에서도 정확하게 인물 영역을 탐지하며, 탐지된 얼굴 위로 동적인 바운딩 박스를 생성함. 웹 브라우저 기반의 실시간 스트리밍을 위해 영상 데이터를 효율적으로 전송하는 아키텍처를 적용했으며, 저지연(Low-latency) 모니터링 환경을 제공함. 단순한 영상 재생을 넘어 서버단에서 이미지 프로세싱을 거친 후 웹으로 실시간 송출하는 전 과정을 담고 있음.",
             ["HTML", "CSS", "PYTHON", "Flask", "dlib", "OpenCV", "NumPy"]
         ],
         [
-            "../images/chatbot.png",
+            "./images/chatbot.png",
             "JH 챗봇 (카카오톡 챗봇)",
             "MusicBrainz API를 활용해 가수의 노래 정보를 실시간으로 추출하고, 사용자 요청에 맞춰 노래를 제공하는 카카오톡 음악 검색 챗봇",
             "MusicBrainz 오픈 API와 Flask 서버를 연동하여 사용자가 입력한 가수나 곡명에 대한 정보를 실시간으로 탐색하고 제공하는 카카오톡 기반의 스마트 챗봇 시스템. 방대한 글로벌 음악 데이터베이스인 MusicBrainz의 엔드포인트를 분석하여 가수의 디스코그래피, 앨범 발매일, 수록곡 정보를 정확하게 추출하고, 이를 카카오톡 챗봇의 JSON 응답 형식에 맞춰 최적화된 인터페이스로 출력함. 단순 텍스트 응답을 넘어 사용자의 요청 의도를 분석해 관련 곡 정보를 카드 형태로 제공하며, 실시간 데이터 파싱을 통해 최신 음악 정보를 별도의 데이터베이스 관리 없이도 즉각적으로 서비스할 수 있도록 설계함.",
@@ -23,7 +31,7 @@
             "http://pf.kakao.com/_Ivxnpn/chat"
         ],
         [
-            "../images/invest.png",
+            "./images/invest.png",
             "JH Invest",
             "가상의 프로그램 \"JH Invest\"를 소개하는 간단한 웹사이트",
             "",
