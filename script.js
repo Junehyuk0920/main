@@ -52,7 +52,7 @@ async function appendCards(k)
             card = `
                 <div class="card portfolio">
                     <div class="image">
-                        <img src="${elem[0]}" alt="">
+                        <img src="${elem[0]}" alt="Project Image">
                     </div>
                     <div>
                         <div>
@@ -72,7 +72,7 @@ async function appendCards(k)
             card = `
                 <div class="card">
                     <div class="image">
-                        <img src="${elem[0]}" alt="">
+                        <img src="${elem[0]}" alt="Certificate Image">
                     </div>
                     <div>
                         <h1 class="name">${elem[1]}</h1>
@@ -86,7 +86,7 @@ async function appendCards(k)
             card = `
                 <div class="card skill">
                     <div class="image">
-                        <img src="${elem[0]}" alt="">
+                        <img src="${elem[0]}" alt="Skill Image">
                     </div>
                     <div>
                         <h1 class="name">${elem[1]}</h1>

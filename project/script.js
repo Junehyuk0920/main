@@ -53,7 +53,7 @@ async function init()
 init();
 
 document.querySelector(".home").addEventListener("click", () => {
-    location.href = "../index.html"
+    location.href = "../index.html";
 })
 
 document.querySelector(".prev").addEventListener("click", () => {
