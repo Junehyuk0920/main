@@ -32,7 +32,7 @@ function updateData()
         alert("존재하지 않는 프로젝트입니다!");
         location.href = "../index.html";
     }
-    projectImg.src = dt[0];
+    projectImg.src = "." + dt[0];
     projectName.textContent = dt[1];
     projectDesc.innerHTML = (dt[3] != "") ? dt[3] : dt[2] + "<br><br><small>Only Short Description</small>";
 
