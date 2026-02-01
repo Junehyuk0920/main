@@ -1,6 +1,13 @@
 [
     [
         [
+            "./images/pathfinder.png",
+            "JH PathFinder | 각종 지원 서류 분석 및 면접 체험",
+            "순수 HTML, CSS, JS, Openrouter API만을 활용한 AI가 분석하는 생기부, 자소서, 이력서 킬러 콘텐츠와 압박 면접 질문 시뮬레이션",
+            "",
+            ["HTML", "CSS", "JavaScript", "API"]
+        ],
+        [
             "https://dummyimage.com/600x400/000/fff",
             "Web OS (개발 중)",
             "순수 HTML, CSS, JS만을 활용한 Windows 11 운영체제의 디자인과 응용 소프트웨어를 체험 할 수 있는 웹사이트",

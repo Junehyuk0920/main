@@ -407,7 +407,7 @@ div.main > a.emphasize
 .card.portfolio > div
 {
     padding: 10px;
-    height: 140px;
+    height: 160px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
