@@ -1,7 +1,7 @@
 :root
 {
-    /* --loading-page-time: 5.2s; */
-    --loading-page-time: 0s;
+    --loading-page-time: 5.2s;
+    /* --loading-page-time: 0s; */
     --screen-width: 1127px;
     --min-padding: 20px;
 }
